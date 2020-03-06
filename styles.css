@@ -1,29 +1,8 @@
-.corazon{
-    height:410px;
-    width:600px;
-  /* border:1px solid red; */
-    margin:auto;
-    position: relative;
-  }
-  
-.corazon::after,
-.corazon::before{
-    content:"";
-    background: red;
-    height:100%;
-    width:50%;
-    display:block;
-    position:absolute;
-    border-radius:50% 50% 0 0;
-    transform:translate(100%,0%)
-  }
-.corazon::after{
-    left:50%;
-    transform:rotate(-50deg);
-    transform-origin: bottom left;
-  }
-.corazon::before{
-    right:50%;
-    transform:rotate(50deg);
-    transform-origin: bottom right;
-  }
+canvas {
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
